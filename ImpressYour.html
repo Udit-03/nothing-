@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Hiiiiii</title>
+
+
+
+	
+	<style>
+/* Define CSS variables for the light and dark mode */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+
+/* Light mode */
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+/* Dark mode button */
+.dark-mode-button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Dark mode button hover */
+.dark-mode-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Dark mode button active */
+.dark-mode-button:active {
+  background-color: var(--dark-color);
+}
+
+
+
+	</style>
+</head>
+<body>
+
+
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+	function myFunction() {
+	   var element = document.body;
+	   element.classList.toggle("dark-mode");
+	}
+</script>
+
+</body>
+</html>
+
+
+
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+</style>
+</head>
+<body>
+<p>Can we hang out soon?</p>
+<img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+</body>
+<title>Botões</title>
+<style>
+#botao1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="botao1">YES BBY!</button>
+<button id="botao2">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('YAYY THANK U 😍❤️');
+});
+</script>
+</body>
+</html>
+
+
+
+
